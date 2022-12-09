@@ -1,5 +1,7 @@
 <html>
   <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/styles.css">
   </head>
 	<body>
@@ -8,59 +10,71 @@
 				<h2>Piedra, Papel o Tijera</h2>
 			</div>
 			<div class="score">
-				<span>0-0</span>
+				<h2 data-score>0-0</h2>
 				<small>marcardor</small>
 			</div>
 			<div class="game">
 				<div class="game-side">
-					Tu
-					<small> Selecciona una opción</small>
+											Tu
+					<span id="leyend"> Selecciona una opción</span>
 					<div class="game-side-actions">
-						<img
-							class="paper"
+						<button type="button" class="button" onclick="game(id)" id="paper" >
+							<img
 							src="../assets/hand-paper-svgrepo-com.svg"
 							height="87"
 							width="100"
-						/>
-						<img
-						class="rock"
+							/>
+						</button>
+
+						<button type="button" class="button" onclick="game(id)" id="rock" >
+							<img
 							src="../assets/hand-rock-svgrepo-com.svg"
 							height="87"
 							width="100"
-						/>
-						<img
-							class="scissors"
+							/>
+						</button>
+
+						<button type="button" class="button" onclick="game(id)" id="scissors" >
+							<img
 							src="../assets/hand-scissors-svgrepo-com.svg"
 							height="87"
 							width="100"
-						/>
+							/>
+						</button>
+
 					</div>
 				</div>
-				<div class="game-side-board">
-					<span>Ganaste</span>
+				<div class="game-side-board" id="board">
 					<div class="line"></div>
 				</div>
 				<div class="game-side">
 					computadora
 					<div class="game-side-actions">
-						<img
+						<button>
+							<img
 							src="../assets/hand-paper-svgrepo-com.svg"
 							height="87"
 							width="100"
-						/>
-						<img
+							/>
+						</button>
+						<button>
+							<img
 							src="../assets/hand-rock-svgrepo-com.svg"
 							height="87"
 							width="100"
-						/>
-						<img
+							/>
+						</button>
+						<button>
+							<img
 							src="../assets/hand-scissors-svgrepo-com.svg"
 							height="87"
 							width="100"
-						/>
+							/>
+						</button>
 					</div>
 				</div>
 			</div>
 		</div>
+		<script src="../js/game.js"></script>
 	</body>
 </html>
