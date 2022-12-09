@@ -1,6 +1,6 @@
 <html>
   <head>
-    <link rel="stylesheet" href="../../styles/styles.css">
+    <link rel="stylesheet" href="../styles/styles.css">
   </head>
 	<body>
 		<div class="container-body">
@@ -8,7 +8,7 @@
 				<h2>Piedra, Papel o Tijera</h2>
 			</div>
 			<div class="score">
-				<span></span>
+				<span>0-0</span>
 				<small>marcardor</small>
 			</div>
 			<div class="game">
@@ -17,16 +17,19 @@
 					<small> Selecciona una opción</small>
 					<div class="game-side-actions">
 						<img
+							class="paper"
 							src="../assets/hand-paper-svgrepo-com.svg"
 							height="87"
 							width="100"
 						/>
 						<img
+						class="rock"
 							src="../assets/hand-rock-svgrepo-com.svg"
 							height="87"
 							width="100"
 						/>
 						<img
+							class="scissors"
 							src="../assets/hand-scissors-svgrepo-com.svg"
 							height="87"
 							width="100"
@@ -35,6 +38,7 @@
 				</div>
 				<div class="game-side-board">
 					<span>Ganaste</span>
+					<div class="line"></div>
 				</div>
 				<div class="game-side">
 					computadora
