@@ -1,18 +1,28 @@
-
+html{
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 .container-body{
   display: flex;
   flex-direction: column;
 }
-.container-body .head{
+.head{
   background-color: rgb(188, 188, 188);
   text-align: center;
-  font-size: larger;
 }
 
-.container-body .score{
+.score{
+  position: relative;
+  margin: auto;
   display: flex;
   flex-direction: column;
   text-align: center;
+  left:30px;
 }
 .game{
   display: flex;
@@ -23,6 +33,7 @@
 .game-side{
   display: flex;
   flex-direction: column;
+  align-items: center
 }
 .game-side-actions{
   display: flex;
@@ -32,4 +43,17 @@
   height: 100%;
   width: 1px;
   background-color: black;
+}
+
+.game-side-board {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+button{
+  border: none;
+  background-color: white;
+}
+button:hover{
+  cursor: pointer;
 }
