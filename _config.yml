@@ -1,0 +1,6 @@
+defaults:
+  - scope:
+      path: ""
+    values:
+      index: /src/view/index.html
+
